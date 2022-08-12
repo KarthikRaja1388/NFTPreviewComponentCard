@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    width:90%;
+    max-width: 350px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    padding: 1em;
+}
+.image-container{
+    position: relative;
+}
+.equilibirium-image{
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%, 0.4);
+    visibility: hidden;
+}
+.content{
+    padding: 0.5em 0;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.content--title{
+    padding: 0.5em 0;
+}
+.content--text{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+.content--inline-container{
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+    margin-top: 0.5em;
+    gap: 1em;
+}
+.content--eth{
+    font-size: 1rem;
+    color: hsl(178, 100%, 50%);
+    margin-right: auto;
+}
+.content--days-left{
+    color: hsl(215, 51%, 70%);
+}
+.content-footer{
+    color: hsl(215, 51%, 70%);
+    padding: 1em 0 0 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.image-container:hover .overlay{
+    visibility: visible;
+}
